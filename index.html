@@ -123,6 +123,26 @@
       font-size: small;
     }
 
+    p.credit {
+      font-size: small;
+    }
+
+    section.left-image-2-part {
+      display: grid;
+      grid-template-rows: 3.25em 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "header header"
+      "image top"
+      "image bottom";
+      justify-items: center;
+      align-items: start;
+    }
+
+    .reveal .slides {
+      border: 2px dotted red;
+    }
+
   </style>
 
 </head>
@@ -136,11 +156,232 @@
   <div class="slides">
 
     <section>
-      <h2>Free Software: It's not about the license</h2>
+      <h2>Free Software</h2>
+      <h3>It's not about the license</h3>
       <p>
         <small>Presented by <a href="http://www.garfieldtech.com/">Larry Garfield</a> (<a href="http://twitter.com/Crell">@Crell</a>)</small>
       </p>
     </section>
+
+    <section>
+      <section>
+        <h2>A modest proposal</h2>
+      </section>
+      <section>
+        Weather bug logo
+        <aside class="notes">
+          <ul>
+            <li>Utiltiy, runs in system tray</li>
+            <li>Gives info</li>
+            <li>Sends browser data to us, we sell it</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        Picture of mine
+        <aside class="notes">
+          <ul>
+            <li>Children from poor families</li>
+            <li>Work as miners</li>
+            <li>Only cost food and housing</li>
+            <li>Smaller shafts</li>
+            <li>30% cost savings</li>
+            <li>That's the business model</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <blockquote>If your business model requires doing something unethical, you don't have a business model.</blockquote>
+        <aside class="notes">
+          <ul>
+            <li>Tweetable statement</li>
+            <li>Business model is irrelevant</li>
+            <li>Keep in mind for the hour</li>
+            <li>This talk is about Free Software ethical framework</li>
+          </ul>
+        </aside>
+      </section>
+    </section>
+    <section>
+      <section>
+        <h2>Ancient history</h2>
+        <h3>(The 70s...)</h3>
+        <aside class="notes">
+          <ul>
+            <li>Gloss over superficially</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        Picture from That 70s Show?
+        <aside class="notes">
+          <ul>
+            <li>Software not portable, financially unimportant</li>
+            <li>Sharing is default</li>
+            <li>Science and academia, part of culture</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        Picture from original BSG?
+        <aside class="notes">
+          <ul>
+            <li>Mid-late 70s</li>
+            <li>Market got bigger, software got more portable</li>
+            <li>Unix, regulated monpoly so ATT couldn't sell</li>
+            <li>Licensed source. people shared patches, not modified versions</li>
+            <li>Incompatible Unixes, inc. BSD</li>
+            <li>Berkeley couldn't "sell", so gave away (BSD license)</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        Something 1980s?
+        <aside class="notes">
+          <ul>
+            <li>1980s, variants became commercial</li>
+            <li>ATT got broken up, could now sell Unix</li>
+            <li>Closed the source</li>
+            <li>Many prop Unixes take BSD code, don't release theirs</li>
+          </ul>
+        </aside>
+      </section>
+    </section>
+    <section>
+      <section>
+        <h2>Richard Stallman</h2>
+        <img src="assets/stallman-larry-nyc.jpg" alt="Richard Stallman and Larry Garfield" />
+        <p>New York, 2015</p>
+        <assets class="notes">
+          <ul>
+            <li>MIT Artificial Intelligence lab</li>
+            <li>Grew up in sharing days</li>
+            <li>Watched computers replaced with new</li>
+            <li>"don't touch the source code and don't share with anyone because selling individual copies is our business model"</li>
+          </ul>
+        </assets>
+      </section>
+      <section>
+        <h2>&lt;aside /&gt;</h2>
+        <aside class="notes">
+          <ul>
+            <li>Philosopher</li>
+            <li>Not always great human being</li>
+            <li>Put aside for the moment</li>
+            <li>Smelly neck-bearded socially inept computer nerd</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <img src="assets/Richard_Matthew_Stallman.jpeg" alt="Richard Stallman" data-credit="https://en.wikipedia.org/wiki/Richard_Stallman#/media/File:Richard_Matthew_Stallman.jpeg" />
+        <p class="credit">By Sam Williams - Taken from the cover of the O'Reilly book <a href="https://en.wikipedia.org/wiki/Free_as_in_Freedom:_Richard_Stallman%27s_Crusade_for_Free_Software" class="extiw" title="w:Free as in Freedom: Richard Stallman's Crusade for Free Software">w:Free as in Freedom: Richard Stallman's Crusade for Free Software</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=208390">Link</a></p>
+        <aside class="notes">
+          <ul>
+            <li>Not about printer driver</li>
+            <li>Personal Freedom</li>
+            <li>Computers are tools</li>
+            <li>Tools obey owner, not the other way around</li>
+            <li>Teach kids sharing</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <blockquote>This meant that the first step in using a computer was to
+          promise not to help your neighbor.</blockquote>
+        <cite>&mdash;Free Software, Free Society, page 18</cite>
+        <aside class="notes">
+          <ul>
+            <li>Ethically problematic.</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <blockquote>Computer users should be free to modify programs to fit
+          their needs, and free to share software, because <em>helping other
+            people is the basis of society</em>.</blockquote>
+        <cite>&mdash;Free Software, Free Society, page 18</cite>
+        <aside class="notes">
+          <ul>
+            <li>Not about software. About freedom.</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Richard Stallman</h2>
+        <ul>
+          <li>Started GNU Project</li>
+          <li class="fragment">Free Software Foundation, 1985</li>
+        </ul>
+        <p class="fragment">But what license?</p>
+      </section>
+      <section>
+        X Windows logo
+        <aside class="notes">
+          <ul>
+            <li>Example: X Windows under MIT license</li>
+            <li>Most Unixes forked/closed it. Not free for users.</li>
+            <li>Need to require reciprocity</li>
+            <li>Need to ensure can't remove freedom</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h3>Free Software Definition</h3>
+        <ol start="0">
+          <li class="fragment">The freedom to run the program as you wish, for any purpose.</li>
+          <li class="fragment">The freedom to study how the program works, and change it so it does your computing as you wish.</li>
+          <li class="fragment">The freedom to redistribute copies so you can help your neighbor.</li>
+          <li class="fragment">The freedom to distribute copies of your modified versions to others.</li>
+        </ol>
+        <blockquote class="fragment">Use, Learn, Improve, Share</blockquote>
+      </section>
+      <section>
+
+      </section>
+    </section>
+
+
+
+
+
+    <section id="closing">
+      <section>
+        <blockquote>We can build... cyberspace to protect values
+          that we believe are fundamental. Or we can build...
+          cyberspace to allow those values to disappear. There is no middle groun.
+          <em>There is no choice that does not include some kind of building</em>.
+          Code is never found; it is only ever made, and only ever made by us.</blockquote>
+        <cite>&mdash;Lawrence Lessig, <a href="https://www.goodreads.com/work/quotes/69719">Code 2.0</a></cite>
+      </section>
+      <section>
+        <h2>Software is a moral act</h2>
+        <ul>
+          <li class="fragment"><q>I reserve the right to use this code to control you against your will.</q></li>
+          <li class="fragment"><q>I will not use this code to control you, but you can use it to control someone else.</q></li>
+          <li class="fragment"><q>I will not use this code to control you, and you may not use it to control others.</q></li>
+        </ul>
+      </section>
+      <section>
+        <h2>What moral statement will you make?</h2>
+      </section>
+    </section>
+
+    <section id="resources">
+      <section>
+        <h2>Further reading</h2>
+        <div class="l-2up">
+          <div style="text-align: center;">
+            <img src="assets/fsfs3-front-cover.jpg" height="500px" alt="" />
+            <p><a href="https://shop.fsf.org/books-docs/free-software-free-society-selected-essays-richard-m-stallman-3rd-edition">Free Software, Free Society 3rd Ed</a>,<br/>Richard Stallman</p>
+          </div>
+          <div style="text-align: center;">
+            <img src="assets/free-culture-book.gif" height="500px" align="" />
+            <p><a href="http://www.free-culture.cc/">Free Culture</a>,<br />Lawrence Lessig</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
     <section class="l-2up">
       <h2><a href="http://twitter.com/Crell">@Crell</a></h2>
       <div>
@@ -154,9 +395,6 @@
         </ul>
       </div>
     </section>
-    <section>
-
-
 
     <div style="display:none">
 
