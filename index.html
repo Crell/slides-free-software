@@ -26,6 +26,10 @@
 
   <style type="text/css">
 
+    .reveal .slides {
+      border: 1px dotted red;
+    }
+
     img.graphic {
     }
 
@@ -139,9 +143,14 @@
       align-items: start;
     }
 
+    .reveal .slide-background-content {
+      background-size: contain;
+    }
+
     .reveal .slides {
       border: 2px dotted red;
     }
+
 
   </style>
 
@@ -177,8 +186,8 @@
           </ul>
         </aside>
       </section>
-      <section>
-        Picture of mine
+      <section data-background="assets/lego-mining.jpg">
+        <p class="fullscreen-credit">https://www.flickr.com/photos/stavos52093/9645884201/</p>
         <aside class="notes">
           <ul>
             <li>Children from poor families</li>
@@ -213,7 +222,7 @@
         </aside>
       </section>
       <section>
-        Picture from That 70s Show?
+        <img src="assets/that-70s-show.jpg" height="680px" data-credit="http://www.indiantelevision.com/television/tv-channels/english-entertainment/fx-brings-an-all-day-marathon-of-that-70s-show-on-independence-day-160812" />
         <aside class="notes">
           <ul>
             <li>Software not portable, financially unimportant</li>
@@ -223,7 +232,7 @@
         </aside>
       </section>
       <section>
-        Picture from original BSG?
+        <img src="assets/bsg-poster.jpg" alt="Battlestar Galactica" data-credit="https://starloggers.com/2018/09/30/battlestar-galactica-the-tv-space-saga-turns-40/" />
         <aside class="notes">
           <ul>
             <li>Mid-late 70s</li>
@@ -250,16 +259,16 @@
     <section>
       <section>
         <h2>Richard Stallman</h2>
-        <img src="assets/stallman-larry-nyc.jpg" alt="Richard Stallman and Larry Garfield" />
+        <img src="assets/stallman-larry-nyc.jpg" height="600px" alt="Richard Stallman and Larry Garfield" />
         <p>New York, 2015</p>
-        <assets class="notes">
+        <aside class="notes">
           <ul>
             <li>MIT Artificial Intelligence lab</li>
             <li>Grew up in sharing days</li>
             <li>Watched computers replaced with new</li>
             <li>"don't touch the source code and don't share with anyone because selling individual copies is our business model"</li>
           </ul>
-        </assets>
+        </aside>
       </section>
       <section>
         <h2>&lt;aside /&gt;</h2>
@@ -273,8 +282,8 @@
         </aside>
       </section>
       <section>
-        <img src="assets/Richard_Matthew_Stallman.jpeg" alt="Richard Stallman" data-credit="https://en.wikipedia.org/wiki/Richard_Stallman#/media/File:Richard_Matthew_Stallman.jpeg" />
-        <p class="credit">By Sam Williams - Taken from the cover of the O'Reilly book <a href="https://en.wikipedia.org/wiki/Free_as_in_Freedom:_Richard_Stallman%27s_Crusade_for_Free_Software" class="extiw" title="w:Free as in Freedom: Richard Stallman's Crusade for Free Software">w:Free as in Freedom: Richard Stallman's Crusade for Free Software</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=208390">Link</a></p>
+        <img src="assets/Richard_Matthew_Stallman.jpeg" height="600px" alt="Richard Stallman" data-credit="https://en.wikipedia.org/wiki/Richard_Stallman#/media/File:Richard_Matthew_Stallman.jpeg" />
+        <p class="credit">By Sam Williams - Taken from the cover of the O'Reilly book <a href="https://en.wikipedia.org/wiki/Free_as_in_Freedom:_Richard_Stallman%27s_Crusade_for_Free_Software" class="extiw" title="Free as in Freedom: Richard Stallman's Crusade for Free Software">Free as in Freedom: Richard Stallman's Crusade for Free Software</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=208390">Link</a></p>
         <aside class="notes">
           <ul>
             <li>Not about printer driver</li>
@@ -315,7 +324,7 @@
         <p class="fragment">But what license?</p>
       </section>
       <section>
-        <img src="assets/X11.svg" alt="X Windows" data-credit="https://commons.wikimedia.org/wiki/File:X11.svg" />
+        <img src="assets/X11.svg" alt="X Windows" height="200px" data-credit="https://commons.wikimedia.org/wiki/File:X11.svg" />
         <div class="fragment">
           <blockquote>Their goal was not freedom, just “success,” defined as “having many users.”
             They did not care whether these users had freedom, only that they should be numerous.</blockquote>
@@ -339,6 +348,12 @@
           <li class="fragment">The freedom to distribute copies of your modified versions to others.</li>
         </ol>
         <blockquote class="fragment">Use, Learn, Improve, Share</blockquote>
+        <aside class="notes">
+          <ul>
+            <li>Clumsy wording, due to its time</li>
+            <li>Reference to how Unix variants were distributed</li>
+          </ul>
+        </aside>
       </section>
       <section>
         <h2>General Public License</h2>
@@ -366,7 +381,7 @@
       <section>
         <blockquote>We can build... cyberspace to protect values
           that we believe are fundamental. Or we can build...
-          cyberspace to allow those values to disappear. There is no middle groun.
+          cyberspace to allow those values to disappear. There is no middle ground.
           <em>There is no choice that does not include some kind of building</em>.
           Code is never found; it is only ever made, and only ever made by us.</blockquote>
         <cite>&mdash;Lawrence Lessig, <a href="https://www.goodreads.com/work/quotes/69719">Code 2.0</a></cite>
@@ -380,7 +395,7 @@
         </ul>
       </section>
       <section>
-        <h2>What moral statement will you make?</h2>
+        <h2>What moral statement<br />will you make?</h2>
       </section>
     </section>
 
