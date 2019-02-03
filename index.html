@@ -147,6 +147,15 @@
       background-size: contain;
     }
 
+    /*********************************************
+     * Portable layouts
+     *********************************************/
+
+    .grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
 
   </style>
 
@@ -184,13 +193,16 @@
       </section>
       <section data-background="assets/lego-mining.jpg">
         <p class="fullscreen-credit">https://www.flickr.com/photos/stavos52093/9645884201/</p>
+      </section>
+      <section data-background="assets/mining-kid.jpg">
+        <p class="fullscreen-credit">https://www.flickr.com/photos/honzasoukup/9645554907/</p>
         <aside class="notes">
           <ul>
             <li>Children from poor families</li>
             <li>Work as miners</li>
-            <li>Only cost food and housing</li>
             <li>Smaller shafts</li>
             <li>30% cost savings</li>
+            <li>Company: Minor Miners</li>
             <li>That's the business model</li>
           </ul>
         </aside>
@@ -210,15 +222,16 @@
     <section>
       <section>
         <h2>Ancient history</h2>
-        <h3>(The 70s...)</h3>
+        <h3 class="fragment">(The 70s...)</h3>
         <aside class="notes">
           <ul>
             <li>Gloss over superficially</li>
           </ul>
         </aside>
       </section>
-      <section>
-        <img src="assets/that-70s-show.jpg" height="680px" data-credit="http://www.indiantelevision.com/television/tv-channels/english-entertainment/fx-brings-an-all-day-marathon-of-that-70s-show-on-independence-day-160812" />
+      <section data-background="assets/that-70s-show.jpg">
+        <p class="fullscreen-credit">http://www.indiantelevision.com/television/tv-channels/english-entertainment/fx-brings-an-all-day-marathon-of-that-70s-show-on-independence-day-160812</p>
+        <!--<img src="assets/that-70s-show.jpg" alt="Life was simpler in the 70s" height="680px" data-credit="http://www.indiantelevision.com/television/tv-channels/english-entertainment/fx-brings-an-all-day-marathon-of-that-70s-show-on-independence-day-160812" />-->
         <aside class="notes">
           <ul>
             <li>Software not portable, financially unimportant</li>
@@ -227,21 +240,22 @@
           </ul>
         </aside>
       </section>
-      <section>
-        <img src="assets/bsg-poster.jpg" alt="Battlestar Galactica" data-credit="https://starloggers.com/2018/09/30/battlestar-galactica-the-tv-space-saga-turns-40/" />
+      <section data-background="assets/bsg-poster.jpg">
+        <p class="fullscreen-credit">https://starloggers.com/2018/09/30/battlestar-galactica-the-tv-space-saga-turns-40/</p>
+        <!--<img src="assets/bsg-poster.jpg" alt="Battlestar Galactica" data-credit="https://starloggers.com/2018/09/30/battlestar-galactica-the-tv-space-saga-turns-40/" />-->
         <aside class="notes">
           <ul>
             <li>Mid-late 70s</li>
             <li>Market got bigger, software got more portable</li>
-            <li>Unix, regulated monpoly so ATT couldn't sell</li>
+            <li>Unix, regulated monopoly so ATT couldn't sell</li>
             <li>Licensed source. people shared patches, not modified versions</li>
             <li>Incompatible Unixes, inc. BSD</li>
             <li>Berkeley couldn't "sell", so gave away (BSD license)</li>
           </ul>
         </aside>
       </section>
-      <section>
-        Something 1980s?
+      <section data-background="assets/knight-rider.jpg">
+        <p class="fullscreen-credit">https://www.mantripping.com/cars/movies-tv-cars/kitt-from-knight-rider.html</p>
         <aside class="notes">
           <ul>
             <li>1980s, variants became commercial</li>
@@ -255,7 +269,7 @@
     <section>
       <section>
         <h2>Richard Stallman</h2>
-        <img src="assets/stallman-larry-nyc.jpg" height="600px" alt="Richard Stallman and Larry Garfield" />
+        <img src="assets/stallman-larry-nyc.jpg" height="500px" alt="Richard Stallman and Larry Garfield" />
         <p>New York, 2015</p>
         <aside class="notes">
           <ul>
@@ -283,7 +297,7 @@
         <aside class="notes">
           <ul>
             <li>Not about printer driver</li>
-            <li>Personal Freedom</li>
+            <li>Personal Freedom, Sovereignty</li>
             <li>Computers are tools</li>
             <li>Tools obey owner, not the other way around</li>
             <li>Teach kids sharing</li>
@@ -308,13 +322,14 @@
         <aside class="notes">
           <ul>
             <li>Not about software. About freedom.</li>
+            <li>Personal sovereignty, digital destiny</li>
           </ul>
         </aside>
       </section>
       <section>
         <h2>Richard Stallman</h2>
         <ul>
-          <li>Started GNU Project</li>
+          <li class="fragment">Started GNU Project</li>
           <li class="fragment">Free Software Foundation, 1985</li>
         </ul>
         <p class="fragment">But what license?</p>
@@ -346,6 +361,7 @@
         <blockquote class="fragment">Use, Learn, Improve, Share</blockquote>
         <aside class="notes">
           <ul>
+            <li>1-3 require source code access</li>
             <li>Clumsy wording, due to its time</li>
             <li>Reference to how Unix variants were distributed</li>
           </ul>
@@ -366,10 +382,117 @@
     </section>
 
     <section>
-      Stuff here about Linux, 90s, appearance of "Open Source".
+      <section>
+        <h2>1991</h2>
+        <img src="assets/tux-linux.svg" alt="Linux" class="fragment" data-credit="https://commons.wikimedia.org/wiki/File:Tux.svg" />
+        <aside class="notes">
+          <ul>
+            <li>Released 1991, Rereleased GPL 1992</li>
+            <li>GNU + Linux</li>
+            <li>Ecosystem evolved</li>
+            <li>Collaborative online development became popular</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h3><a href="http://www.catb.org/esr/open-source.html">Goodbye, "free software";<br />hello, "open source"</a></h3>
+        <div class="grid-2col">
+          <div>
+            <img src="assets/osi-symbol.png" alt="The logo of the Open Source Initiative" data-credit="http://opensource.org/" />
+          </div>
+          <div>
+            <ul>
+              <li>Triggered by Netscape releasing engine, 1997</li>
+              <li>Rebrand</li>
+              <li>"Free" scares businesses</li>
+              <li>"the term makes a lot of corporate types nervous" &mdash;Eric Raymond</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <blockquote>For instance, Wired magazine said that Robert McMillan, editor of Linux Magazine,
+          “feels that the move toward open source software should be fueled by <em>technical, rather than
+          political, decisions.”</em>  And Caldera’s CEO openly urged users to drop the goal of freedom and
+          work instead for the <em>“popularity of Linux.”</em></blockquote>
+        <cite>&mdash;Free Software, Free Society, page 54 (published 2000)</cite>
+        <aside class="notes">
+          <ul>
+            <li>Nervous about their business model</li>
+            <li>Just-popular means adding proprietary code is OK!</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <blockquote>As one person put it, <em>“Open source is a development methodology; free software is
+          a social movement.”</em> For the Open Source movement, non-free software is a suboptimal solution.
+          For the Free Software movement, non-free software is a social problem and free software is the
+          solution.</blockquote>
+        <cite>&mdash;Free Software, Free Society, page 57</cite>
+        <aside class="notes">
+          <ul>
+            <li>If one could prove that FS always produced inferior technical product, FS wouldn't change.</li>
+            <li>Even if you could prove forced child miners were more efficient, it's still wrong.</li>
+            <li>OSS isn't always superior, in fact...</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>Linus' Law</h2>
+        <p><q>Given enough eyeballs, all bugs are shallow</q></p>
+        <p class="fragment">Only true for <a href="https://freedom-to-tinker.com/2013/10/09/the-linux-backdoor-attempt-of-2003/">malicious code</a></p>
+        <aside class="notes">
+          <ul>
+            <li>Companies want to spy on their users</li>
+            <li>Hostile hackers want to capture data</li>
+            <li>Govt intel agencies want to spy on everyone</li>
+            <li>Goes back to 1st moral principle</li>
+          </ul>
+        </aside>
+      </section>
     </section>
 
+    <section>
+      <section>
+        <blockquote>Proprietary software has no security at all in one crucial case&mdash;against its developer. And the
+          developer may help others attack. <em>Microsoft shows Windows bugs to the NSA</em> (the US government digital
+          spying agency) <em>before fixing them</em>.</blockquote>
+        <cite>&mdash;"Free Software, Free Society", Page 31</cite>
+        <p style="margin-top: 2em;">Source: Sean Gallagher, "<a href="http://arstechnica.com/security/2013/06/nsa-getsearly-access-to-zero-day-data-from-microsoft-others/">NSA Gets Early Access to Zero-Day Data from Microsoft</a>, Others," 14 June 2013</p>
+      </section>
+      <section>
+        <p class="bigtext">Free Software is about<br />protecting users from developers.</p>
+        <p class="bigtext fragment">From us.</p>
+      </section>
+      <section>
+        <blockquote>If the users don’t control the program, the program controls the users.</blockquote>
+        <p>&mdash;Richard Stallman, "Free Software, Free Society", Page 30</p>
+      </section>
+      <section>
+        <h3>1st Moral Principle of the web</h3>
+        <blockquote>When a computer receives conflicting instructions from its owner and from a remote party, the owner always wins.</blockquote>
+        <p>&mdash;Cory Doctorow, Former EFF Director</p>
+        <p><a href="http://boingboing.net/2016/06/24/how-to-protect-the-future-web.html">How to protect the future web</a></p>
+        <aside class="notes">
+          <ul>
+            <li>Said in 2016, but concept goes back to beginning</li>
+            <li>People have a right to digital self-sovereignty</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <p class="bigtext">Free Software is Civil Rights<br />applied to software.</p>
+        <aside class="notes">
+          <ul>
+            <li>Let's see some examples.</li>
+          </ul>
+        </aside>
+      </section>
+    </section>
 
+    <section>
+
+    </section>
 
 
 
