@@ -155,6 +155,17 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
+      justify-items: center;
+    }
+
+    div.grid-2up-1down {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "left right"
+        "bottom bottom";
+      justify-items: center;
     }
 
   </style>
@@ -463,6 +474,11 @@
       <section>
         <p class="bigtext">Free Software is about<br />protecting users from developers.</p>
         <p class="bigtext fragment">From us.</p>
+        <aside class="notes">
+          <ul>
+            <li>Your freedom as a developer isn't the point.</li>
+          </ul>
+        </aside>
       </section>
       <section>
         <blockquote>If the users don’t control the program, the program controls the users.</blockquote>
@@ -484,13 +500,105 @@
         <p class="bigtext">Free Software is Civil Rights<br />applied to software.</p>
         <aside class="notes">
           <ul>
+            <li>All this talk of Freedom?</li>
             <li>Let's see some examples.</li>
           </ul>
         </aside>
       </section>
     </section>
 
+    <style>
+
+    </style>
+
     <section>
+      <section>
+        <div class="grid-2up-1down">
+          <img src="assets/walden-odell.jpg" alt="Walden O'Dell" data-credit="https://www.americanbanker.com/slideshow/diebold-under-swidarski-2005-to-2013" />
+          <img src="assets/diebold-machine.jpg" class="fragment" style="height: 420px" alt="A Diebold voting machine" data-credit="https://truedemocracyparty.net/voting-machines/" />
+          <div class="fragment" style="grid-area: bottom; font-size: 0.8em">
+            <p>Sources:</p>
+            <ul>
+              <li><a href="https://www.nytimes.com/2003/11/09/business/machine-politics-in-the-digital-age.html">Machine Politics in the Digital Age</a> (NYTimes)</li>
+              <li><a href="https://www.vanityfair.com/news/2005/03/hitchens200503">Ohio's Odd Numbers</a> (Vanity Fair)</li>
+              <li><a href="https://www.wired.com/2008/03/the-mysterious/">The Mysterious Case of Ohio's Voting Machines</a> (Wired)</li>
+            </ul>
+          </div>
+        </div>
+        <aside class="notes">
+          <ul>
+            <li>Walden O'Dell, Ohio businessman</li>
+            <li>2003, "I am committed to helping Ohio deliver its electoral votes to the president next year"</li>
+            <li>Diebold Election Systems</li>
+            <li>Zero oversight or review of code.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <div class="grid-2col">
+          <img src="assets/sara-golemon.jpg" alt="Sara Golemon" data-credit="https://github.com/sgolemon" />
+          <img src="assets/medtronic-722-insulin-pump.jpg" class="fragment" alt="Medtronic 722 Insulin Pump" data-credit="https://www.dotmed.com/listing/other/medtronic/722/paradigm-insulin-pump/2394475" />
+        </div>
+        <aside class="notes">
+          <ul>
+            <li>Diabetic</li>
+            <li>Medtronic 722 insulin pump</li>
+            <li>Over the air updates</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <img src="assets/john-deere-tractor.jpg" style="width: 50%" alt="A John Deere Tracktor" data-credit="https://motherboard.vice.com/en_us/article/xykkkd/why-american-farmers-are-hacking-their-tractors-with-ukrainian-firmware" />
+        <div class="fragment" style="font-size: 0.7em">
+          <blockquote>At the end of the day, I bought this equipment, and I want everything I need to keep it running without relying on the manufacturer or dealer.</blockquote>
+          <cite>&mdash;Rancher Jeff Buckingham</cite>
+        </div>
+        <div class="fragment" style="font-size: 0.7em; margin-top: 1em;">
+          <p>Sources:</p>
+          <ul>
+            <li><a href="https://motherboard.vice.com/en_us/article/xykkkd/why-american-farmers-are-hacking-their-tractors-with-ukrainian-firmware">Why American farmers are hacking their tractors with Ukranian firmware</a> (Motherboard)</li>
+            <li><a href="https://www.wired.com/story/john-deere-farmers-right-to-repair/">John Deere Just Swindled Farmers out of Their Right to Repair</a> (Wired)</li>
+          </ul>
+        </div>
+        <aside class="notes">
+          <ul>
+            <li>Tractor is computer with wheels</li>
+            <li>DRM on the parts, need "authorized tech" to authorize replacement</li>
+            <li>Service manuals available, but useless without auth</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <div class="grid-2up-1down">
+          <img src="assets/eric-loomis.jpg" alt="Eric Loomis" width="100%" data-credit="Wisconsin Department of Corrections" />
+          <div class="fragment">
+            <img src="assets/equivant-compas.png" width="100%" alt="Screenshot of the Compas software" data-credit="http://www.equivant.com/solutions/inmate-classification" />
+            <p>COMPAS, from Northpointe/Equivant</p>
+          </div>
+          <div class="fragment" style="grid-area: bottom; font-size: 0.7em">
+            <p>Sources:</p>
+            <ul>
+              <li><a href="https://www.nytimes.com/2016/06/23/us/backlash-in-wisconsin-against-using-data-to-foretell-defendants-futures.html">In Wisconsin, a Backlash Against Using Data to Foretell Defendants’ Futures</a> (NYTimes)</li>
+              <li><a href="https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/">Courts Are Using AI to Sentence Criminals. That Must Stop Now</a> (Wired)</li>
+              <li><a href="https://phys.org/news/2017-07-lid-criminal-sentencing-software.html">Opening the lid on criminal sentencing software</a> (Phys.org)</li>
+              <li><a href="https://www.theatlantic.com/technology/archive/2018/01/equivant-compas-algorithm/550646/">A Popular Algorithm Is No Better at Predicting Crimes Than Random People</a></li>
+            </ul>
+          </div>
+        </div>
+        <aside class="notes">
+          <ul>
+            <li>2013, Wisconsin, Eric Loomis</li>
+            <li>fleeing an officer and driving a car without the owner's consent</li>
+            <li>COMPAS from Northpointe, now Equivant</li>
+            <li>Sued for due process; courts rejected</li>
+            <li>Racial bias?</li>
+            <li>No better than humans</li>
+          </ul>
+        </aside>
+      </section>
 
     </section>
 
@@ -523,11 +631,11 @@
         <h2>Further reading</h2>
         <div class="l-2up">
           <div style="text-align: center;">
-            <img src="assets/fsfs3-front-cover.jpg" height="500px" alt="" />
+            <img src="assets/fsfs3-front-cover.jpg" height="400px" alt="" />
             <p><a href="https://shop.fsf.org/books-docs/free-software-free-society-selected-essays-richard-m-stallman-3rd-edition">Free Software, Free Society 3rd Ed</a>,<br/>Richard Stallman</p>
           </div>
           <div style="text-align: center;">
-            <img src="assets/free-culture-book.gif" height="500px" align="" />
+            <img src="assets/free-culture-book.gif" height="400px" align="" />
             <p><a href="http://www.free-culture.cc/">Free Culture</a>,<br />Lawrence Lessig</p>
           </div>
         </div>
