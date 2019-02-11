@@ -48,7 +48,7 @@
     vertically un-centered slides */
     .reveal .slides>section,
     .reveal .slides>section>section {
-      padding: 20px 0px;
+      padding: 20px 0;
     }
 
     .reveal h2 + p.bigtext,
@@ -147,6 +147,21 @@
       background-size: contain;
     }
 
+    /* Remove the company logo for this one... */
+    .light .reveal div.logo:after {
+      content: none !important;
+    }
+
+    .light .reveal div.logo {
+      display: block !important;
+    }
+
+    .reveal ul, .reveal ol {
+      margin-left: 2em;
+      margin-right: 2em;
+      margin-top: 1em;
+    }
+
     /*********************************************
      * Portable layouts
      *********************************************/
@@ -175,7 +190,7 @@
 <body class="light">
 <div class="reveal">
   <div class="logo">
-    <p>Platform.sh</p>
+    <p><a href="http://twitter.com/Crell">@Crell</a></p>
   </div>
   <!-- Any section element inside of this container is displayed as a slide -->
   <div class="slides">
@@ -191,9 +206,6 @@
     <section>
       <section>
         <h2>A modest proposal</h2>
-      </section>
-      <section>
-        Weather bug logo
         <aside class="notes">
           <ul>
             <li>Utiltiy, runs in system tray</li>
@@ -202,11 +214,16 @@
           </ul>
         </aside>
       </section>
-      <section data-background="assets/lego-mining.jpg">
-        <p class="fullscreen-credit">https://www.flickr.com/photos/stavos52093/9645884201/</p>
+      <section>
+        <img src="assets/kazaa-logo.png" alt="Kazaa" data-credit="https://commons.wikimedia.org/wiki/File:Kazaa_(logo).png" />
       </section>
-      <section data-background="assets/mining-kid.jpg">
-        <p class="fullscreen-credit">https://www.flickr.com/photos/honzasoukup/9645554907/</p>
+      <section>
+        <img src="assets/lego-mining.jpg" alt="Lego people mining" data-credit="https://www.flickr.com/photos/stavos52093/9645884201/" />
+        <!--<p class="fullscreen-credit">https://www.flickr.com/photos/stavos52093/9645884201/</p>-->
+      </section>
+      <section>
+        <img src="assets/mining-kid.jpg" alt="A child would make a great miner" data-credit="https://www.flickr.com/photos/honzasoukup/9645554907/" />
+        <!--<p class="fullscreen-credit">https://www.flickr.com/photos/honzasoukup/9645554907/</p>-->
         <aside class="notes">
           <ul>
             <li>Children from poor families</li>
@@ -240,9 +257,9 @@
           </ul>
         </aside>
       </section>
-      <section data-background="assets/that-70s-show.jpg">
-        <p class="fullscreen-credit">http://www.indiantelevision.com/television/tv-channels/english-entertainment/fx-brings-an-all-day-marathon-of-that-70s-show-on-independence-day-160812</p>
-        <!--<img src="assets/that-70s-show.jpg" alt="Life was simpler in the 70s" height="680px" data-credit="http://www.indiantelevision.com/television/tv-channels/english-entertainment/fx-brings-an-all-day-marathon-of-that-70s-show-on-independence-day-160812" />-->
+      <section >
+        <!--<p class="fullscreen-credit">http://www.indiantelevision.com/television/tv-channels/english-entertainment/fx-brings-an-all-day-marathon-of-that-70s-show-on-independence-day-160812</p>-->
+        <img src="assets/that-70s-show.jpg" style="margin-top: -0.5em;" alt="Life was simpler in the 70s" height="680px" data-credit="http://www.indiantelevision.com/television/tv-channels/english-entertainment/fx-brings-an-all-day-marathon-of-that-70s-show-on-independence-day-160812" />
         <aside class="notes">
           <ul>
             <li>Software not portable, financially unimportant</li>
@@ -251,9 +268,9 @@
           </ul>
         </aside>
       </section>
-      <section data-background="assets/bsg-poster.jpg">
-        <p class="fullscreen-credit">https://starloggers.com/2018/09/30/battlestar-galactica-the-tv-space-saga-turns-40/</p>
-        <!--<img src="assets/bsg-poster.jpg" alt="Battlestar Galactica" data-credit="https://starloggers.com/2018/09/30/battlestar-galactica-the-tv-space-saga-turns-40/" />-->
+      <section>
+        <!--<p class="fullscreen-credit">https://starloggers.com/2018/09/30/battlestar-galactica-the-tv-space-saga-turns-40/</p>-->
+        <img src="assets/bsg-poster.jpg" alt="Battlestar Galactica" data-credit="https://starloggers.com/2018/09/30/battlestar-galactica-the-tv-space-saga-turns-40/" />
         <aside class="notes">
           <ul>
             <li>Mid-late 70s</li>
@@ -265,8 +282,9 @@
           </ul>
         </aside>
       </section>
-      <section data-background="assets/knight-rider.jpg">
-        <p class="fullscreen-credit">https://www.mantripping.com/cars/movies-tv-cars/kitt-from-knight-rider.html</p>
+      <section>
+        <img src="assets/knight-rider.jpg" alt="Knight Rider" style="width: 90%; margin-top: -0.5em" data-credit="https://www.mantripping.com/cars/movies-tv-cars/kitt-from-knight-rider.html">
+        <!--<p class="fullscreen-credit">https://www.mantripping.com/cars/movies-tv-cars/kitt-from-knight-rider.html</p>-->
         <aside class="notes">
           <ul>
             <li>1980s, variants became commercial</li>
@@ -365,9 +383,9 @@
         <h3>Free Software Definition</h3>
         <ol start="0">
           <li class="fragment">The freedom to run the program as you wish, for any purpose.</li>
-          <li class="fragment">The freedom to study how the program works, and change it so it does your computing as you wish.</li>
-          <li class="fragment">The freedom to redistribute copies so you can help your neighbor.</li>
-          <li class="fragment">The freedom to distribute copies of your modified versions to others.</li>
+          <li class="fragment" style="margin-top: 0.5em;">The freedom to study how the program works, and change it so it does your computing as you wish.</li>
+          <li class="fragment" style="margin-top: 0.5em;">The freedom to redistribute copies so you can help your neighbor.</li>
+          <li class="fragment" style="margin-top: 0.5em;">The freedom to distribute copies of your modified versions to others.</li>
         </ol>
         <blockquote class="fragment">Use, Learn, Improve, Share</blockquote>
         <aside class="notes">
@@ -382,7 +400,7 @@
         <h2>General Public License</h2>
         <ul>
           <li>You have all four freedoms...</li>
-          <li class="fragment">.. <em>on condition that</em> you extend the same to your downstream</li>
+          <li class="fragment" style="margin-top: 1em;">.. <em>on condition that</em> you extend the same to your users</li>
         </ul>
         <aside class="notes">
           <ul>
@@ -391,11 +409,11 @@
         </aside>
       </section>
     </section>
-
     <section>
       <section>
         <h2>1991</h2>
         <img src="assets/tux-linux.svg" alt="Linux" class="fragment" data-credit="https://commons.wikimedia.org/wiki/File:Tux.svg" />
+        <p class="fragment bigtext">GNU/Linux</p>
         <aside class="notes">
           <ul>
             <li>Released 1991, Rereleased GPL 1992</li>
@@ -424,7 +442,8 @@
       <section>
         <blockquote>For instance, Wired magazine said that Robert McMillan, editor of Linux Magazine,
           “feels that the move toward open source software should be fueled by <em>technical, rather than
-          political, decisions.”</em>  And Caldera’s CEO openly urged users to drop the goal of freedom and
+            political, decisions.”</em></blockquote>
+        <blockquote>Caldera’s CEO openly urged users to drop the goal of freedom and
           work instead for the <em>“popularity of Linux.”</em></blockquote>
         <cite>&mdash;Free Software, Free Society, page 54 (published 2000)</cite>
         <aside class="notes">
@@ -506,11 +525,6 @@
         </aside>
       </section>
     </section>
-
-    <style>
-
-    </style>
-
     <section>
       <section>
         <div class="grid-2up-1down">
@@ -534,7 +548,6 @@
           </ul>
         </aside>
       </section>
-
       <section>
         <div class="grid-2col">
           <img src="assets/sara-golemon.jpg" alt="Sara Golemon" data-credit="https://github.com/sgolemon" />
@@ -548,7 +561,6 @@
           </ul>
         </aside>
       </section>
-
       <section>
         <img src="assets/john-deere-tractor.jpg" style="width: 50%" alt="A John Deere Tracktor" data-credit="https://motherboard.vice.com/en_us/article/xykkkd/why-american-farmers-are-hacking-their-tractors-with-ukrainian-firmware" />
         <div class="fragment" style="font-size: 0.7em">
@@ -570,17 +582,16 @@
           </ul>
         </aside>
       </section>
-
       <section>
         <div class="grid-2up-1down">
-          <img src="assets/eric-loomis.jpg" alt="Eric Loomis" width="100%" data-credit="Wisconsin Department of Corrections" />
+          <img src="assets/eric-loomis.jpg" alt="Eric Loomis" width="90%" data-credit="Wisconsin Department of Corrections" />
           <div class="fragment">
-            <img src="assets/equivant-compas.png" width="100%" alt="Screenshot of the Compas software" data-credit="http://www.equivant.com/solutions/inmate-classification" />
+            <img src="assets/equivant-compas.png" width="90%" alt="Screenshot of the Compas software" data-credit="http://www.equivant.com/solutions/inmate-classification" />
             <p>COMPAS, from Northpointe/Equivant</p>
           </div>
           <div class="fragment" style="grid-area: bottom; font-size: 0.7em">
             <p>Sources:</p>
-            <ul>
+            <ul style="margin-top: 0em">
               <li><a href="https://www.nytimes.com/2016/06/23/us/backlash-in-wisconsin-against-using-data-to-foretell-defendants-futures.html">In Wisconsin, a Backlash Against Using Data to Foretell Defendants’ Futures</a> (NYTimes)</li>
               <li><a href="https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/">Courts Are Using AI to Sentence Criminals. That Must Stop Now</a> (Wired)</li>
               <li><a href="https://phys.org/news/2017-07-lid-criminal-sentencing-software.html">Opening the lid on criminal sentencing software</a> (Phys.org)</li>
@@ -600,11 +611,10 @@
         </aside>
       </section>
     </section>
-
     <section>
       <blockquote>Our choice is not between "regulation" and "no regulation." <em>The code regulates.</em>
         It implements values, or not. It enables freedoms, or disables them. It protects privacy, or
-        promotes monitoring. People choose how the code does these things. <em>People write the code</em>.</blockquote>
+        promotes monitoring. People choose how the code does these things.<br /><em>People write the code</em>.</blockquote>
       <cite>&mdash;Larry Lessig, <a href="https://harvardmagazine.com/2000/01/code-is-law-html">Code is Law</a>, 2000</cite>
       <aside class="notes">
         <ul>
@@ -665,8 +675,8 @@
       <section>
         <blockquote>We can build... cyberspace to protect values
           that we believe are fundamental. Or we can build...
-          cyberspace to allow those values to disappear. There is no middle ground.
-          <em>There is no choice that does not include some kind of building</em>.
+          cyberspace to allow those values to disappear. <em>There is no middle ground</em>.
+          There is no choice that does not include some kind of building.
           Code is never found; it is only ever made, and only ever made by us.</blockquote>
         <cite>&mdash;Lawrence Lessig, <a href="https://www.goodreads.com/work/quotes/69719">Code 2.0</a></cite>
       </section>
@@ -674,8 +684,8 @@
         <h2>Software is a moral act</h2>
         <ul>
           <li class="fragment"><q>I reserve the right to use this code to control you against your will.</q></li>
-          <li class="fragment"><q>I will not use this code to control you, but you can use it to control someone else.</q></li>
-          <li class="fragment"><q>I will not use this code to control you, and you may not use it to control others.</q></li>
+          <li class="fragment" style="margin-top: 1em;"><q>I will not use this code to control you, but you can use it to control someone else.</q></li>
+          <li class="fragment" style="margin-top: 1em;"><q>I will not use this code to control you, and you may not use it to control others.</q></li>
         </ul>
       </section>
       <section>
@@ -697,20 +707,6 @@
           </div>
         </div>
       </section>
-    </section>
-
-    <section class="l-2up">
-      <h2><a href="http://twitter.com/Crell">@Crell</a></h2>
-      <div>
-        <img src="assets/larry-olaf-hug.jpg" alt="Larry implements Huggable" style="width: 350px; margin: 0" />
-      </div>
-      <div>
-        <ul style="text-wrap: none">
-          <li>Director of DX, <a href="http://www.platform.sh/">Platform.sh</a></li>
-          <li style="margin-top: 1em;">PHP-FIG Core Committee</li>
-          <li style="margin-top: 1em;"><code>implements Huggable</code></li>
-        </ul>
-      </div>
     </section>
 
     <div style="display:none">
@@ -764,14 +760,6 @@
       ** What choice will you make?
 
     </div>
-
-    <section id="final">
-      <h2>Larry Garfield</h2>
-      <h2><a href="http://twitter.com/Crell">@Crell</a></h2>
-      <p>Director of Developer Experience <a href="http://www.platform.sh/">Platform.sh</a></p>
-      <p>Continuous Deployment Cloud Hosting</p>
-      <p>Stalk us at <a href="http://twitter.com/Platformsh">@PlatformSH</a></p>
-    </section>
 
   </div>
 
