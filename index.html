@@ -590,7 +590,7 @@
         </div>
         <aside class="notes">
           <ul>
-            <li>2013, Wisconsin, Eric Loomis</li>
+            <li>Eric Loomis, 2013, Wisconsin</li>
             <li>fleeing an officer and driving a car without the owner's consent</li>
             <li>COMPAS from Northpointe, now Equivant</li>
             <li>Sued for due process; courts rejected</li>
@@ -599,7 +599,64 @@
           </ul>
         </aside>
       </section>
+    </section>
 
+    <section>
+      <blockquote>Our choice is not between "regulation" and "no regulation." <em>The code regulates.</em>
+        It implements values, or not. It enables freedoms, or disables them. It protects privacy, or
+        promotes monitoring. People choose how the code does these things. <em>People write the code</em>.</blockquote>
+      <cite>&mdash;Larry Lessig, <a href="https://harvardmagazine.com/2000/01/code-is-law-html">Code is Law</a>, 2000</cite>
+      <aside class="notes">
+        <ul>
+          <li>We write law.</li>
+          <li>Non-Free law is secret law.</li>
+          <li>We're on the web, how does this apply to us?</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section>
+      <section>
+        <img src="assets/facebook-logo.svg" width="60%" alt="Facebook" data-credit="https://en.facebookbrand.com/assets/f-logo/" />
+        <aside class="notes">
+          <ul>
+            <li>Entire conf on FB violations of customers</li>
+            <li>Social ill, Free Software helps guard against</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2>The ASP loophole</h2>
+        <p class="fragment">(Application Service Provider, not Active Server Pages)</p>
+        <blockquote class="fragment">If I only let people use it over a network, they never get a copy of
+          the code so they don't have Free rights to the source!</blockquote>
+        <aside class="notes">
+          <ul>
+            <li>Everything on the web</li>
+            <li>The web is built on Free Software, and threatens it</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2><a href="https://www.gnu.org/licenses/why-affero-gpl.en.html">Affero GPL</a></h2>
+        <img src="assets/agplv3-logo.svg" alt="Affero GPLv3" data-credit="https://en.wikipedia.org/wiki/File:AGPLv3_Logo.svg" />
+        <aside class="notes">
+          <ul>
+            <li>2002, Affero consulting, co-wrote with FSF</li>
+            <li>GPL + "users over a network get the same rights"</li>
+            <li>Addresses some, not all, issues with SaaS</li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <p><q>What right do you have to your own data?</q></p>
+        <p class="fragment"><q>What right do your users have to <em>their</em> own data?</q></p>
+        <aside class="notes">
+          <ul>
+            <li>Ethical developer MUST ask that question</li>
+          </ul>
+        </aside>
+      </section>
     </section>
 
 
@@ -738,13 +795,13 @@
 
     // More info https://github.com/hakimel/reveal.js#dependencies
     dependencies: [
-      { src: '../../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-      { src: '../../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: '../../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: '../../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-      { src: '../../reveal/plugin/search/search.js', async: true },
-      { src: '../../reveal/plugin/zoom-js/zoom.js', async: true },
-      { src: '../../reveal/plugin/notes/notes.js', async: true }
+      { src: '../../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: '../../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '../../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '../../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: '../../plugin/search/search.js', async: true },
+      { src: '../../plugin/zoom-js/zoom.js', async: true },
+      { src: '../../plugin/notes/notes.js', async: true }
     ]
   });
 
